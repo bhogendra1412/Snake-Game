@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .neon-border-cyan {
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.15);
+  }
+  .neon-border-magenta {
+    border: 1px solid rgba(255, 0, 229, 0.3);
+    box-shadow: 0 0 15px rgba(255, 0, 229, 0.15);
+  }
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .mesh-bg {
+    background: radial-gradient(circle at 20% 30%, rgba(0, 242, 255, 0.08) 0, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(255, 0, 229, 0.08) 0, transparent 40%);
+  }
+  .snake-cell {
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+  }
+  .snake-body {
+    background: #39ff14;
+    box-shadow: 0 0 8px #39ff14;
+  }
+  .snake-head {
+    background: #00f2ff;
+    box-shadow: 0 0 10px #00f2ff;
+  }
+  .food {
+    background: #ff00e5;
+    box-shadow: 0 0 12px #ff00e5;
+    border-radius: 50%;
+  }
+}
+
